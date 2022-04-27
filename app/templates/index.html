@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" href="style.css">
+</head>
+<body>
+    {% for recipe in recipes %}
+        <h2 class="mb-4 font-semibold tracking-widest text-white uppercase title-font">
+            {{recipe.label}}
+        </h2>
+    {% endfor %}
+</body>
+</html>
